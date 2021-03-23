@@ -7,7 +7,7 @@ nav {
   text-align: right;
   position: sticky;
   top: 3%;
-  z-index: 100;
+  z-index: 2;
 }
 
 nav a {
@@ -25,11 +25,27 @@ nav a:hover {
   box-shadow: 0 0 5px white;
 }
 
+#lang {
+  margin-top: 3em;
+  float: right;
+  background-color: white;
+  padding: 10px;
+  border: black;
+  border-radius: 20%;
+  box-shadow: 0 0 5px black;
+  position: relative;
+  z-index: 200;
+}
+
+.eng {
+  display: none;
+}
+
 header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../images/choir-2.jpg");
+  background-image: url("../images/hor-1.jpg");
   padding: 3%;
   position: relative;
   margin-top: -6%;
@@ -38,27 +54,15 @@ header {
   height: 100vh;
 }
 
-#lang {
-  text-align: right;
-  margin-top: 10vh;
-  cursor: pointer;
-}
-
-#lang a {
-  background-color: white;
-  margin: 2px;
-  padding: 2px;
-}
-
 h1 {
   font-size: 5vw;
-  width: 35vw;
+  width: 38vw;
   margin-top: 30vh;
 }
 
 h2 {
   font-size: 4vw;
-  width: 15vw;
+  width: 16vw;
 }
 
 h1, h2 {
@@ -86,17 +90,8 @@ h1 span {
   box-shadow: 0 0 15px gray;
   border-radius: 10%;
   padding: 1px;
-  margin: auto;
-}
-
-#sticky-back {
-  top: 0;
-  position: sticky;
-}
-
-.no-sticky {
   float: right;
-  display: none;
+  font-size: 2em;
 }
 
 .back:visited {
@@ -106,22 +101,13 @@ h1 span {
 @media (max-width: 800px) {
   h1 {
     font-size: 7vw;
-    width: 50vw;
+    width: 53vw;
   }
 
   h2 {
     font-size: 5vw;
-    width: 19vw;
+    width: 20vw;
   }
-
-  #sticky-back {
-    display: none;
-  }
-
-  .no-sticky {
-    display: block;
-  }
-
 }
 
 h3 {
@@ -188,6 +174,19 @@ h3 {
   box-shadow: 0 0 15px gray;
 }
 
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:visited {
+  color: black;
+}
+
+.link:hover {
+  color: #cc0044;
+}
+
 @media(max-width: 800px) {
   .video iframe {
     width: 100%;
@@ -197,7 +196,6 @@ h3 {
 #media {
   padding-bottom: 10%;
 }
-
 
 footer {
   color: #d7c48e;
@@ -227,6 +225,7 @@ footer {
 footer p {
   text-align: right;
   padding-right: 5%;
+  font-size: 0.9em;
 }
 
 footer {

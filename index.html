@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hor</title>
+    <title>Hor Ars Vocalis</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nothing+You+Could+Do&family=Oswald:wght@700&display=swap" rel="stylesheet">
@@ -11,98 +11,127 @@
   </head>
   <body>
     <a id="top"></a>
-    <nav id="navbar">
+    <nav>
+      <div class="srp">
+        <a href="#about">O nama</a>
+        <a href="#history">Istorijat</a>
+        <a href="#gallery">Galerija</a>
+        <a href="#media">Video</a>
+        <a href="#contact">Kontakt</a>
+      </div>
+      <div class="eng">
         <a href="#about">About</a>
         <a href="#history">History</a>
         <a href="#gallery">Gallery</a>
         <a href="#media">Video</a>
         <a href="#contact">Contact</a>
+      </div>
     </nav>
-    <header>
-      <div id="lang"><a id="srp"> srp </a><a id="eng"> eng </a></div>
-        <h1 class="title">Hor <span>Ars</span> Vocalis</h1>
-        <h2 class="title">Beograd</h2>
+      <button onclick="changeLanguage()" id="lang" type="button">eng</button>
+    <header>    
+      <h1 class="title srp">Hor <span>Ars</span> Vocalis</h1>
+      <h2 class="title srp">Beograd</h2>
+      <h1 class="title eng">Choir <span>Ars</span> Vocalis</h1>
+      <h2 class="title eng">Belgrade</h2>
     </header>
-    <a href="#top" class="back" id="sticky-back">Back to Top</a>
     <div class="container">
       <section class="main" id="about">
-        <h3>About</h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut elementum mauris. Aliquam ut magna nec turpis mollis volutpat. Praesent pellentesque elit nunc, in viverra turpis blandit a. Nam in tortor sed tortor ultrices iaculis eget eu libero. Etiam et magna pulvinar ex fringilla ullamcorper vitae vitae erat. Proin feugiat erat lorem, ut posuere mauris scelerisque non. Praesent non odio ac diam ullamcorper cursus.
+        <h3 class="srp">O nama</h3>
+        <p class="srp"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut elementum mauris. Aliquam ut magna nec turpis mollis volutpat. Praesent pellentesque elit nunc, in viverra turpis blandit a. Nam in tortor sed tortor ultrices iaculis eget eu libero. Etiam et magna pulvinar ex fringilla ullamcorper vitae vitae erat. Proin feugiat erat lorem, ut posuere mauris scelerisque non. Praesent non odio ac diam ullamcorper cursus.
 Sed a quam at nibh mollis fringilla quis quis purus. Vestibulum luctus vehicula sem vel faucibus. Praesent libero est, pretium in dapibus vel, bibendum at lacus. Mauris ac scelerisque sem, et suscipit dolor. Etiam vel varius lacus. Nulla vel blandit leo, nec ullamcorper lectus. Nunc et tempus sapien, molestie fermentum sem. Suspendisse ullamcorper, felis a convallis feugiat, ligula quam lobortis lorem, a ullamcorper enim mi eget eros. Quisque congue gravida risus tincidunt cursus. Cras fermentum fermentum tincidunt. </p>
-        <a href="#top" class="back no-sticky">Back to Top</a>
+        <h3 class="eng">About</h3>
+        <p class="eng"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut elementum mauris. Aliquam ut magna nec turpis mollis volutpat. Praesent pellentesque elit nunc, in viverra turpis blandit a. Nam in tortor sed tortor ultrices iaculis eget eu libero. Etiam et magna pulvinar ex fringilla ullamcorper vitae vitae erat. Proin feugiat erat lorem, ut posuere mauris scelerisque non. Praesent non odio ac diam ullamcorper cursus.
+Sed a quam at nibh mollis fringilla quis quis purus. Vestibulum luctus vehicula sem vel faucibus. Praesent libero est, pretium in dapibus vel, bibendum at lacus. Mauris ac scelerisque sem, et suscipit dolor. Etiam vel varius lacus. Nulla vel blandit leo, nec ullamcorper lectus. Nunc et tempus sapien, molestie fermentum sem. Suspendisse ullamcorper, felis a convallis feugiat, ligula quam lobortis lorem, a ullamcorper enim mi eget eros. Quisque congue gravida risus tincidunt cursus. Cras fermentum fermentum tincidunt. </p>
+        <a href="#top" class="back"><i class="fa fa-angle-double-up"></i></a>
       </section>
       <section class="main" id="history">
-        <h3>History</h3>
-        <p>In hac habitasse platea dictumst. Cras aliquam laoreet nulla sit amet lacinia. Praesent consectetur diam at facilisis porta. Nulla maximus turpis sed quam rutrum, vel mollis erat eleifend. Praesent non iaculis odio. Morbi pharetra elit venenatis, auctor massa ut, ultrices augue. Aenean interdum ligula suscipit augue consequat, consequat rhoncus felis convallis. Nunc vitae dictum enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras rutrum venenatis rutrum. Ut sodales et risus ut aliquet. Duis convallis nulla a dui consequat, nec posuere felis maximus. Curabitur quis sagittis nibh. Maecenas mauris leo, aliquet eget massa vestibulum, mattis blandit risus. Praesent tincidunt mollis tellus sit amet fermentum. </p>
-         <a href="#top" class="back no-sticky">Back to Top</a>
+        <h3 class="srp">Istorijat</h3>
+        <p class="srp">In hac habitasse platea dictumst. Cras aliquam laoreet nulla sit amet lacinia. Praesent consectetur diam at facilisis porta. Nulla maximus turpis sed quam rutrum, vel mollis erat eleifend. Praesent non iaculis odio. Morbi pharetra elit venenatis, auctor massa ut, ultrices augue. Aenean interdum ligula suscipit augue consequat, consequat rhoncus felis convallis. Nunc vitae dictum enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras rutrum venenatis rutrum. Ut sodales et risus ut aliquet. Duis convallis nulla a dui consequat, nec posuere felis maximus. Curabitur quis sagittis nibh. Maecenas mauris leo, aliquet eget massa vestibulum, mattis blandit risus. Praesent tincidunt mollis tellus sit amet fermentum. </p>
+         <h3 class="eng">History</h3>
+         <p class="eng">In hac habitasse platea dictumst. Cras aliquam laoreet nulla sit amet lacinia. Praesent consectetur diam at facilisis porta. Nulla maximus turpis sed quam rutrum, vel mollis erat eleifend. Praesent non iaculis odio. Morbi pharetra elit venenatis, auctor massa ut, ultrices augue. Aenean interdum ligula suscipit augue consequat, consequat rhoncus felis convallis. Nunc vitae dictum enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras rutrum venenatis rutrum. Ut sodales et risus ut aliquet. Duis convallis nulla a dui consequat, nec posuere felis maximus. Curabitur quis sagittis nibh. Maecenas mauris leo, aliquet eget massa vestibulum, mattis blandit risus. Praesent tincidunt mollis tellus sit amet fermentum. </p>
+          <a href="#top" class="back"><i class="fa fa-angle-double-up"></i></a>
       </section>
       <section class="main" id="gallery">
-        <h3>Gallery</h3>
+        <h3 class="srp">Galerija</h3>
+        <h3 class="eng">Gallery</h3>
         <div id="photo-container">
           <div class="photo">
-             <a href="https://scontent.fbeg4-1.fna.fbcdn.net/v/t1.0-9/66196299_2321400178115226_7777594875750383616_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=973b4a&_nc_ohc=PZ1U75k7nAcAX_VM3Mj&_nc_ht=scontent.fbeg4-1.fna&oh=3c011aa04eedb8d5f8f1c82bb2b8189a&oe=607C4E87" target="_blank">
-               <img src="https://scontent.fbeg4-1.fna.fbcdn.net/v/t1.0-9/66196299_2321400178115226_7777594875750383616_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=973b4a&_nc_ohc=PZ1U75k7nAcAX_VM3Mj&_nc_ht=scontent.fbeg4-1.fna&oh=3c011aa04eedb8d5f8f1c82bb2b8189a&oe=607C4E87" alt="Hor 1">
+             <a href="images/hor-6.jpg" target="_blank">
+               <img src="images/hor-6.jpg" alt="Hor 1">
              </a>
-          <div class="desc">Opis slike 1</div>
+          <div class="desc srp">Opis slike 1</div>
+          <div class="desc eng">Description 1</div>
         </div>
           <div class="photo">
-          <a href="https://scontent.fbeg4-1.fna.fbcdn.net/v/t1.0-9/41447979_2138519109736668_4769972257822867456_o.jpg?_nc_cat=102&ccb=1-3&_nc_sid=973b4a&_nc_ohc=rmSDwWGg9loAX_ruCOh&_nc_ht=scontent.fbeg4-1.fna&oh=a992ddae814035252b9329d371a2a889&oe=607B5564" target="_blank">
-            <img src="https://scontent.fbeg4-1.fna.fbcdn.net/v/t1.0-9/41447979_2138519109736668_4769972257822867456_o.jpg?_nc_cat=102&ccb=1-3&_nc_sid=973b4a&_nc_ohc=rmSDwWGg9loAX_ruCOh&_nc_ht=scontent.fbeg4-1.fna&oh=a992ddae814035252b9329d371a2a889&oe=607B5564" alt="Proba">
+          <a href="images/hor-2.jpg" target="_blank">
+            <img src="images/hor-2.jpg" alt="Proba">
           </a>
-          <div class="desc">Proba</div>
+          <div class="desc srp">Proba</div>
+          <div class="desc eng">Practice</div>
         </div>
           <div class="photo">
-          <a href="https://scontent.fbeg4-1.fna.fbcdn.net/v/t1.0-9/65045928_2312139242374653_5981423686953992192_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=973b4a&_nc_ohc=eu31ruBMskQAX_Goalb&_nc_ht=scontent.fbeg4-1.fna&oh=600981fae9176066748d335f507231e7&oe=607DE45A" target="_blank">
-            <img src="https://scontent.fbeg4-1.fna.fbcdn.net/v/t1.0-9/65045928_2312139242374653_5981423686953992192_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=973b4a&_nc_ohc=eu31ruBMskQAX_Goalb&_nc_ht=scontent.fbeg4-1.fna&oh=600981fae9176066748d335f507231e7&oe=607DE45A" alt="Hor 3">
+          <a href="images/hor-3.jpg" target="_blank">
+            <img src="images/hor-3.jpg" alt="Hor 3">
           </a>
-          <div class="desc">Opis slike 3</div>
+          <div class="desc srp">Opis slike 3</div>
+          <div class="desc eng">Description 3</div>
         </div>
         <div class="photo">
-        <a href="https://scontent.fbeg4-1.fna.fbcdn.net/v/t1.0-9/82110267_2475277212727521_5326212733593452544_o.jpg?_nc_cat=110&ccb=1-3&_nc_sid=973b4a&_nc_ohc=SEinNaqls_wAX9RMPQO&_nc_ht=scontent.fbeg4-1.fna&oh=5666053d785e45a0733ebb2a840890f7&oe=607C7701" target="_blank">
-          <img src="https://scontent.fbeg4-1.fna.fbcdn.net/v/t1.0-9/82110267_2475277212727521_5326212733593452544_o.jpg?_nc_cat=110&ccb=1-3&_nc_sid=973b4a&_nc_ohc=SEinNaqls_wAX9RMPQO&_nc_ht=scontent.fbeg4-1.fna&oh=5666053d785e45a0733ebb2a840890f7&oe=607C7701" alt="Hor 4">
+        <a href="images/hor-4.jpg" target="_blank">
+          <img src="images/hor-4.jpg" alt="Hor 4">
         </a>
-        <div class="desc">Opis slike 4</div>
+        <div class="desc srp">Opis slike 4</div>
+        <div class="desc eng">Description 4</div>
       </div>
       <div class="photo">
-      <a href="https://scontent.fbeg4-1.fna.fbcdn.net/v/t1.0-9/118377047_2657197137868860_930504261391278820_o.jpg?_nc_cat=105&ccb=1-3&_nc_sid=973b4a&_nc_ohc=PjGYnLrVHXoAX8tCE8h&_nc_ht=scontent.fbeg4-1.fna&oh=feab59e272c84b49f388039489c553ca&oe=607D445F" target="_blank">
-        <img src="https://scontent.fbeg4-1.fna.fbcdn.net/v/t1.0-9/118377047_2657197137868860_930504261391278820_o.jpg?_nc_cat=105&ccb=1-3&_nc_sid=973b4a&_nc_ohc=PjGYnLrVHXoAX8tCE8h&_nc_ht=scontent.fbeg4-1.fna&oh=feab59e272c84b49f388039489c553ca&oe=607D445F" alt="Hor 5">
+      <a href="images/hor-5.jpg" target="_blank">
+        <img src="images/hor-5.jpg" alt="Hor 5">
       </a>
-      <div class="desc">Opis slike 5</div>
+      <div class="desc srp">Opis slike 5</div>
+      <div class="desc eng">Description 5</div>
     </div>
     <div class="photo">
-    <a href="https://scontent.fbeg4-1.fna.fbcdn.net/v/t1.0-9/81327674_2465849193670323_6743107553892237312_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=973b4a&_nc_ohc=3CZbNZlKHTkAX9TQe1s&_nc_ht=scontent.fbeg4-1.fna&oh=bdaf2d62e97ef05350299e7ee6706689&oe=607C4606" target="_blank">
-      <img src="https://scontent.fbeg4-1.fna.fbcdn.net/v/t1.0-9/81327674_2465849193670323_6743107553892237312_n.jpg?_nc_cat=108&ccb=1-3&_nc_sid=973b4a&_nc_ohc=3CZbNZlKHTkAX9TQe1s&_nc_ht=scontent.fbeg4-1.fna&oh=bdaf2d62e97ef05350299e7ee6706689&oe=607C4606" alt="Hor 11">
+    <a href="images/ars.jpg" target="_blank">
+      <img src="images/ars.jpg" alt="Hor 11">
     </a>
-    <div class="desc">Opis slike 6</div>
+    <div class="desc srp">Opis slike 6</div>
+    <div class="desc eng">Description 6</div>
   </div>
       </div>
-      <a href="#top" class="back no-sticky">Back to Top</a>
+      <a href="#top" class="back"><i class="fa fa-angle-double-up"></i></a>
       </section>
       <section class="main" id="media">
-        <h3>Video</h3>
+        <h3 class="srp">Video</h3>
+        <h3 class="eng">Video</h3>
         <section class="video">
           <iframe width="800" height="470" src="https://www.youtube.com/embed/ZRDwmT6Gv-Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p id="author">Posted by: <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw" target="_blank" class="link">Hor Ars Vocalis</a></p>
+          <p class="srp">Objavio: <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw" target="_blank" class="link">Hor Ars Vocalis</a></p>
+          <p class="eng">Posted by: <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw" target="_blank" class="link">Choir Ars Vocalis</a></p>
          </section>
          <section class="video">
            <iframe width="800" height="470" src="https://www.youtube.com/embed/flo5yTF0Oz8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <p id="author">Posted by: <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw" target="_blank" class="link">Hor Ars Vocalis</a></p>
+           <p class="srp">Objavio: <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw" target="_blank" class="link">Hor Ars Vocalis</a></p>
+           <p class="eng">Posted by: <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw" target="_blank" class="link">Choir Ars Vocalis</a></p>
           </section>
           <section class="video">
             <iframe width="800" height="470" src="https://www.youtube.com/embed/Bw58AZM7f8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p id="author">Posted by: <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw" target="_blank" class="link">Hor Ars Vocalis</a></p>
+            <p class="srp">Objavio: <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw" target="_blank" class="link">Hor Ars Vocalis</a></p>
+            <p class="eng">Posted by: <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw" target="_blank" class="link">Choir Ars Vocalis</a></p>
            </section>
-           <a href="#top" class="back no-sticky">Back to Top</a>
+         <a href="#top" class="back"><i class="fa fa-angle-double-up"></i></a>
       </section>
     </div>
     <footer>
       <div class="container">
-      <h3 id="contact">Contact<h3>
+        <section id="contact">
+        <h3 class="srp">Kontakt<h3>
+        <h3 class="eng">Contact<h3>
         <div id="contact-links">
         <a href="https://sr-rs.facebook.com/choirarsvocalis/" class="social" target="_blank"><i class="fa fa-facebook"></i></a>
         <a href="https://www.instagram.com/choirarsvocalis/" class="social" target="_blank"><i class="fa fa-instagram"></i></a>
         <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw/featured" class="social" target="_blank"><i class="fa fa-youtube"></i></a>
       </div>
+    </section>
     </div>
     <p>Created by IvanaGoSt</p>
   </footer>
