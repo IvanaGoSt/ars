@@ -54,36 +54,44 @@ header {
   height: 100vh;
 }
 
+#title {
+  background-color: black;
+  position: absolute;
+  bottom: 8%;
+  left: 20%;
+  border: 2px solid #d7c48e;
+  border-radius: 1%;
+  width: 60%;
+  margin: auto;
+}
+
 h1 {
-  font-size: 5vw;
-  width: 38vw;
-  margin-top: 30vh;
+  font-size: 3vw;
+  /*width: 38vw;*/
+  /*margin-top: 30vh;*/
 }
 
 h2 {
-  font-size: 4vw;
-  width: 16vw;
+  font-size: 2vw;
+  /*width: 16vw;*/
 }
 
-h1, h2 {
-  background-color: white;
-  padding-left: 2%;
-  opacity: 70%;
-  border-radius: 3%;
-  box-shadow: 0 0 15px white;
+h1, h2 {  
+  color: #f2ebd9;
+  text-align: center;
 }
 
 h1, h2, h3 {
   font-family: 'Oswald', sans-serif;
 }
 
-h1 span {
+/*h1 span {
   font-family: 'Nothing You Could Do', cursive;
   color: #cc0044;
-}
+}*/
 
 .back {
-  color: black;  
+  color: black;
   padding: 1px;
   float: right;
   font-size: 2em;
@@ -93,15 +101,17 @@ h1 span {
   color: black;
 }
 
-@media (max-width: 800px) {
-  h1 {
-    font-size: 7vw;
-    width: 53vw;
+@media (max-width: 1000px) {
+  #title {
+    left: 10%;
+    width: 80%;
+    border-radius: 3%;
   }
-
-  h2 {
+  h1 {
     font-size: 5vw;
-    width: 20vw;
+  }
+  h2 {
+    font-size: 3vw;
   }
 }
 
@@ -197,19 +207,47 @@ footer {
   background-color: black;
 }
 
+#contact-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.sign-up {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input {
+  background-color: #f2ebd9;
+  border-radius: 2%;
+}
+
+.submit {
+  background-color: #c3a655;
+  border-radius: 2%;
+}
+
 #contact-links, .social {
   color: #e6e6e6
 }
 #contact-links {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .social {
   color: #e6e6e6;
-  margin: 0.5em;
-  font-size: 1em;
+  margin: 0.4em;
+  font-size: 3em;
   text-shadow: 0 0 15px gray;
 }
 

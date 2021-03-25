@@ -28,11 +28,13 @@
       </div>
     </nav>
       <button onclick="changeLanguage()" id="lang" type="button">eng</button>
-    <header>    
-      <h1 class="title srp">Hor <span>Ars</span> Vocalis</h1>
-      <h2 class="title srp">Beograd</h2>
-      <h1 class="title eng">Choir <span>Ars</span> Vocalis</h1>
-      <h2 class="title eng">Belgrade</h2>
+    <header>
+      <div id="title">
+        <h1 class="title srp">Hor <span>Ars</span> Vocalis</h1>
+        <h2 class="title srp">Beograd</h2>
+        <h1 class="title eng">Choir <span>Ars</span> Vocalis</h1>
+        <h2 class="title eng">Belgrade</h2>
+      </div>
     </header>
     <div class="container">
       <section class="main" id="about">
@@ -124,13 +126,35 @@ Sed a quam at nibh mollis fringilla quis quis purus. Vestibulum luctus vehicula 
     <footer>
       <div class="container">
         <section id="contact">
-        <h3 class="srp">Kontakt<h3>
-        <h3 class="eng">Contact<h3>
-        <div id="contact-links">
-        <a href="https://sr-rs.facebook.com/choirarsvocalis/" class="social" target="_blank"><i class="fa fa-facebook"></i></a>
-        <a href="https://www.instagram.com/choirarsvocalis/" class="social" target="_blank"><i class="fa fa-instagram"></i></a>
-        <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw/featured" class="social" target="_blank"><i class="fa fa-youtube"></i></a>
-      </div>
+        <h3 class="srp">Kontakt</h3>
+        <h3 class="eng">Contact</h3>
+          <div id="contact-2">
+            <div id="form">
+              <h4 class="srp sign-up">Prijavite se da postanete član hora.</h4>
+              <h4 class="eng sign-up">Sign up to become a choir member.</h4>
+              <div class="srp">
+                <form action="mailto:ivanagost@gmail.com" method="POST" enctype="text/plain">
+                  <input type="text" name="name" placeholder="Vaše ime..." class="input"></br>
+                  <input type="email" name="_replyto" placeholder="Vaš e-mail" class="input"></br>
+                  <textarea id="subject" name="subject" placeholder="Tekst poruke..." rows="6" column="20" class="input"></textarea> </br>
+                  <input type="submit" value="Pošaljite" class="submit">
+                </form>
+              </div>
+              <div class="eng">
+                <form action="mailto:ivanagost@gmail.com" method="POST" enctype="text/plain">
+                  <input type="text" name="name" placeholder="Your name, please..." class="input"></br>
+                  <input type="email" name="_replyto" placeholder="Your e-mail" class="input"></br>
+                  <textarea id="subject" name="subject" placeholder="Message text..." rows="6" column="20" class="input"></textarea> </br>
+                  <input type="submit" value="Send" class="submit">
+                </form>
+              </div>
+            </div>
+            <div id="contact-links">
+              <a href="https://sr-rs.facebook.com/choirarsvocalis/" class="social" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/choirarsvocalis/" class="social" target="_blank"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw/featured" class="social" target="_blank"><i class="fa fa-youtube"></i></a>
+            </div>
+          </div>
     </section>
     </div>
     <p>Created by IvanaGoSt</p>
