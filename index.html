@@ -38,6 +38,9 @@
     </header>
     <div class="container">
       <section class="main" id="about">
+        <div id="logo">
+          <img src="images/logo.jpg" alt="logo" width="100px" height="100px">
+        </div>
         <h3 class="srp">O nama</h3>
         <p class="srp"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut elementum mauris. Aliquam ut magna nec turpis mollis volutpat. Praesent pellentesque elit nunc, in viverra turpis blandit a. Nam in tortor sed tortor ultrices iaculis eget eu libero. Etiam et magna pulvinar ex fringilla ullamcorper vitae vitae erat. Proin feugiat erat lorem, ut posuere mauris scelerisque non. Praesent non odio ac diam ullamcorper cursus.
 Sed a quam at nibh mollis fringilla quis quis purus. Vestibulum luctus vehicula sem vel faucibus. Praesent libero est, pretium in dapibus vel, bibendum at lacus. Mauris ac scelerisque sem, et suscipit dolor. Etiam vel varius lacus. Nulla vel blandit leo, nec ullamcorper lectus. Nunc et tempus sapien, molestie fermentum sem. Suspendisse ullamcorper, felis a convallis feugiat, ligula quam lobortis lorem, a ullamcorper enim mi eget eros. Quisque congue gravida risus tincidunt cursus. Cras fermentum fermentum tincidunt. </p>
@@ -101,7 +104,7 @@ Sed a quam at nibh mollis fringilla quis quis purus. Vestibulum luctus vehicula 
   </div>
       </div>
       <a href="#top" class="back"><i class="fa fa-angle-double-up"></i></a>
-      </section>
+    </section>
       <section class="main" id="media">
         <h3 class="srp">Video</h3>
         <h3 class="eng">Video</h3>
@@ -133,19 +136,31 @@ Sed a quam at nibh mollis fringilla quis quis purus. Vestibulum luctus vehicula 
               <h4 class="srp sign-up">Prijavite se da postanete član hora.</h4>
               <h4 class="eng sign-up">Sign up to become a choir member.</h4>
               <div class="srp">
-                <form action="mailto:ivanagost@gmail.com" method="POST" enctype="text/plain">
-                  <input type="text" name="name" placeholder="Vaše ime..." class="input"></br>
-                  <input type="email" name="_replyto" placeholder="Vaš e-mail" class="input"></br>
-                  <textarea id="subject" name="subject" placeholder="Tekst poruke..." rows="6" column="20" class="input"></textarea> </br>
+                <form class="gform" data-email="sasajtaporuka@gmail.com" action="https://script.google.com/macros/s/AKfycbxjf_ul1cC_5MIA3N69fgHPZYZilrwnuu8upfta/exec" method="POST">
+                  <label for="ime">Ime</label>
+                  <input id="ime" type="text" name="name" placeholder="Vaše ime..." class="input"></br>
+                  <label for="email-sr">e-mail</label>
+                  <input type="email-sr" name="email" placeholder="Vaš e-mail" class="input"></br>
+                  <label for="poruka">Poruka</label>
+                  <textarea id="poruka" name="message" placeholder="Tekst poruke..." rows="6" column="20" class="input"></textarea> </br>
                   <input type="submit" value="Pošaljite" class="submit">
+                  <div style="visibility:hidden" class="thankyou_message">
+                    <h4>Hvala! Uskoro ćemo Vam odgovoriti!</h4>
+                  </div>
                 </form>
               </div>
               <div class="eng">
-                <form action="mailto:ivanagost@gmail.com" method="POST" enctype="text/plain">
-                  <input type="text" name="name" placeholder="Your name, please..." class="input"></br>
-                  <input type="email" name="_replyto" placeholder="Your e-mail" class="input"></br>
-                  <textarea id="subject" name="subject" placeholder="Message text..." rows="6" column="20" class="input"></textarea> </br>
+                <form class="gform" data-email="sasajtaporuka@gmail.com" action="https://script.google.com/macros/s/AKfycbxjf_ul1cC_5MIA3N69fgHPZYZilrwnuu8upfta/exec" method="POST">
+                  <label for="name">Name</label>
+                  <input id="name" type="text" name="name" placeholder="Your name, please..." class="input"></br>
+                  <label for="email-en">e-mail</label>
+                  <input type="email-en" name="email" placeholder="Your e-mail" class="input"></br>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Message text..." rows="6" column="20" class="input"></textarea> </br>
                   <input type="submit" value="Send" class="submit">
+                  <div style="visibility:hidden" class="thankyou_message">
+                    <h4>Thanks for contacting us! We will get back to you soon!</h4>
+                  </div>
                 </form>
               </div>
             </div>
@@ -161,5 +176,6 @@ Sed a quam at nibh mollis fringilla quis quis purus. Vestibulum luctus vehicula 
   </footer>
 
     <script src="scripts/main.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="scripts/form-submission-handler.js"></script>
       </body>
 </html>

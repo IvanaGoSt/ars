@@ -15,7 +15,7 @@ nav a {
   color: white;
   background-color: black;
   padding: 1%;
-  border-radius: 5%;
+  border-radius: 3px;
   margin: auto;
 }
 
@@ -29,7 +29,7 @@ nav a:hover {
   margin-top: 3em;
   float: right;
   background-color: white;
-  padding: 10px;
+  padding: 8px;
   border: black;
   border-radius: 20%;
   box-shadow: 0 0 5px black;
@@ -45,7 +45,8 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../images/hor-1.jpg");
+  /*background-image: url("../images/hor-1.jpg");*/
+  background-image: url("../images/hor-8.jpg");
   padding: 3%;
   position: relative;
   margin-top: -6%;
@@ -57,22 +58,23 @@ header {
 #title {
   background-color: black;
   position: absolute;
-  bottom: 15%;
-  left: 20%;
+  bottom: 8%;
+  left: 25%;
   border: 2px solid #d7c48e;
-  border-radius: 1%;
-  width: 60%;
+  border-radius: 5px;
+  width: 50%;
   margin: auto;
+  opacity: 80%;
 }
 
 h1 {
-  font-size: 3vw;
+  font-size: 270%;
   /*width: 38vw;*/
   /*margin-top: 30vh;*/
 }
 
 h2 {
-  font-size: 2vw;
+  font-size: 230%;
   /*width: 16vw;*/
 }
 
@@ -101,27 +103,48 @@ h1, h2, h3 {
   color: black;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
   #title {
     left: 10%;
     width: 80%;
-    border-radius: 3%;
+    bottom: 12%;
   }
   h1 {
-    font-size: 5vw;
+    font-size: 200%;
   }
   h2 {
-    font-size: 3vw;
+    font-size: 150%;
+  }
+  #logo {
+    padding-top: 55px;
+  }
+}
+
+@media (max-height: 500px) {
+  #title {
+    left: 25%;
+    width: 50%;
+  }
+  h1 {
+    font-size: 150%;
+  }
+  h2 {
+    font-size: 100%;
   }
 }
 
 h3 {
-  font-size: 5vh;
+  font-size: 200%;
+  text-align: center;
 }
 
 .container {
   max-width: 800px;
   margin: auto;
+}
+
+#logo img {
+  box-shadow: 0 0 15px gray;
 }
 
 .main {
@@ -139,10 +162,6 @@ h3 {
     text-align: left;
     padding: 2%;
   }
-}
-
-h3 {
-  text-align: center;
 }
 
 #photo-container {
@@ -163,7 +182,6 @@ h3 {
 
 .photo img {
   width: auto;
-  /*object-fit: cover;*/
   height: 100%;
 }
 
@@ -199,7 +217,7 @@ h3 {
 }
 
 #media {
-  padding-bottom: 10%;
+  padding-bottom: 15%;
 }
 
 footer {
@@ -216,6 +234,7 @@ footer {
 
 .sign-up {
   text-align: center;
+  font-size: 20px;
 }
 
 form {
@@ -226,12 +245,22 @@ form {
 
 .input {
   background-color: #f2ebd9;
-  border-radius: 2%;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px;
 }
 
 .submit {
   background-color: #c3a655;
-  border-radius: 2%;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+  color: black;
+}
+
+label {
+  padding: 3px;
 }
 
 #contact-links, .social {
