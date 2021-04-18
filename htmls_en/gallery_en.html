@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hor Ars Vocalis</title>
+    <link href="../styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nothing+You+Could+Do&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <script language="javascript" type="text/javascript" src="txts/navbar.txt"></script>
+    <div class="container">
+      <script language="javascript" type="text/javascript" src="txts/header.txt"></script>
+      <section class="main" id="gallery">
+        <h3>Gallery</h3>
+        <div id="photo-container">
+          <div class="photo">
+            <img src="../images/hor-6.jpg" onclick="openLightbox();toSlide(1)" alt="Hor 1">
+            <div class="desc">Description 1</div>
+          </div>
+          <div class="photo">
+            <img src="../images/hor-2.jpg" onclick="openLightbox();toSlide(2)" alt="Proba">
+            <div class="desc">Practice</div>
+          </div>
+          <div class="photo">
+            <img src="../images/hor-3.jpg" onclick="openLightbox();toSlide(3)" alt="Hor 3">
+            <div class="desc">Description 3</div>
+          </div>
+        <div class="photo">
+          <img src="../images/hor-4.jpg" onclick="openLightbox();toSlide(4)" alt="Hor 4">
+          <div class="desc">Description 4</div>
+        </div>
+        <div class="photo">
+          <img src="../images/hor-5.jpg" onclick="openLightbox();toSlide(5)" alt="Hor 5">
+          <div class="desc">Description 5</div>
+        </div>
+        <div class="photo">
+          <img src="../images/ars.jpg" onclick="openLightbox();toSlide(6)" alt="Hor 11">
+          <div class="desc">Description 6</div>
+        </div>
+      </div>
+      <div class="modal" id=Lightbox>
+        <span class="close pointer" onclick="closeLightbox()">&times;</span>
+         <div class="modal-content">
+          <div class="slide">
+            <img src="../images/hor-1.jpg" class="image-slide" alt="Hor-1" />
+          </div>
+          <div class="slide">
+            <img src="../images/hor-2.jpg" class="image-slide" alt="hor-2" />
+          </div>
+          <div class="slide">
+            <img src="../images/hor-3.jpg" class="image-slide" alt="Hor-3" />
+          </div>
+          <div class="slide">
+            <img src="../images/hor-4.jpg" class="image-slide" alt="Hor-4" />
+          </div>
+          <div class="slide">
+            <img src="../images/hor-5.jpg" class="image-slide" alt="hor-5" />
+          </div>
+         <div class="slide">
+           <img src="../images/hor-6.jpg" class="image-slide" alt="Hor-6" />
+         </div>
+       </div>
+       <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+       <a class="next" onclick="changeSlide(1)">&#10095;</a>
+     </div>
+    </section>
+      <!--<span>&#9776;</span>-->
+    </div>
+    <script language="javascript" type="text/javascript" src="txts/footer.txt"></script>
+
+    <script src="../scripts/main.js"></script>
+      </body>
+</html>

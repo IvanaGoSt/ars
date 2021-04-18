@@ -1,0 +1,1 @@
+document.write('<header><button id="lang" type="button"><a href="../index.html">srp</a></button><div><h1>Choir Ars Vocalis</h1><h2>Belgrade</h2></div></header>')

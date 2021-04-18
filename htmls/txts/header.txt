@@ -1,0 +1,1 @@
+document.write('<header><button id="lang" type="button"><a href="../htmls_en/index_en.html">eng</a></button><div><h1>Hor Ars Vocalis</h1><h2>Beograd</h2></div></header>')

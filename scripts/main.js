@@ -1,17 +1,54 @@
-let srp = document.getElementsByClassName("srp");
-let eng = document.getElementsByClassName("eng");
-let btn = document.getElementById("lang")
+let links = document.querySelectorAll("nav a");
 
-function changeLanguage() {
-  for(let i = 0; i < srp.length; i++) {
-    if(eng[i].style.display === "none" || eng[i].style.display === "") {
-      srp[i].style.display = "none";
-      eng[i].style.display = "block";
-      btn.innerHTML = "srp";
+function dropNavbar() {
+  for(let i = 0; i < links.length; i++) {
+    if(links[i].style.display === "none" || links[i].style.display === "") {
+      links[i].style.display = "block";
     } else {
-      eng[i].style.display = "none";
-      srp[i].style.display = "block";
-      btn.innerHTML = "eng"
+      links[i].style.display = "none";
     }
   }
 }
+
+let slideIndex = 1;
+    showSlide(slideIndex);
+
+    function openLightbox() {
+      document.getElementById('Lightbox').style.display = 'block';
+    };
+
+    function closeLightbox() {
+      document.getElementById('Lightbox').style.display = 'none';
+    };
+
+    function changeSlide(n) {
+      showSlide(slideIndex += n);
+    };
+
+    function toSlide(n) {
+      showSlide(slideIndex = n);
+    };
+
+    function showSlide(n) {
+      const slides = document.getElementsByClassName('slide');
+      let modalPreviews = document.getElementsByClassName('modal-preview');
+
+      if (n > slides.length) {
+        slideIndex = 1;
+      };
+
+      if (n < 1) {
+        slideIndex = slides.length;
+      };
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      };
+
+      for (let i = 0; i < modalPreviews.length; i++) {
+        modalPreviews[i].className = modalPreviews[i].className.replace(' active', '');
+      };
+
+      slides[slideIndex - 1].style.display = 'block';
+      modalPreviews[slideIndex - 1].className += ' active';
+    };

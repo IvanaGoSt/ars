@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,134 +10,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <a id="top"></a>
     <nav>
-      <div class="srp">
-        <a href="#about">O nama</a>
-        <a href="#history">Istorijat</a>
-        <a href="#gallery">Galerija</a>
-        <a href="#media">Video</a>
-        <a href="#contact">Kontakt</a>
-      </div>
-      <div class="eng">
-        <a href="#about">About</a>
-        <a href="#history">History</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#media">Video</a>
-        <a href="#contact">Contact</a>
+      <div class="container">
+        <div id="logo">
+          <img src="images/logo.jpg" alt="logo" width="50px" height="50px">
+        </div>
+        <div class="items">
+          <a href="#about">O nama</a>
+          <a href="htmls/history.html">Istorijat</a>
+          <a href="htmls/gallery.html">Galerija</a>
+          <a href="htmls/media.html">Video</a>
+          <a href="#contact">Kontakt</a>
+        </div>
+        <div id="bars">
+          <span onclick="dropNavbar()"><i class="fa fa-bars"></i></span>
+        </div>
       </div>
     </nav>
-      <button onclick="changeLanguage()" id="lang" type="button">eng</button>
-    <header>
-      <div id="title">
-        <h1 class="title srp">Hor <span>Ars</span> Vocalis</h1>
-        <h2 class="title srp">Beograd</h2>
-        <h1 class="title eng">Choir <span>Ars</span> Vocalis</h1>
-        <h2 class="title eng">Belgrade</h2>
-      </div>
-    </header>
     <div class="container">
+      <header>
+        <button id="lang" type="button"><a href="htmls_en/index_en.html">eng</a></button>
+        <div>
+          <h1>Hor Ars Vocalis</h1>
+          <h2>Beograd</h2>
+        </div>
+      </header>
       <section class="main" id="about">
-        <div id="logo">
-          <img src="images/logo.jpg" alt="logo" width="100px" height="100px">
-        </div>
-        <h3 class="srp">O nama</h3>
-        <p class="srp"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut elementum mauris. Aliquam ut magna nec turpis mollis volutpat. Praesent pellentesque elit nunc, in viverra turpis blandit a. Nam in tortor sed tortor ultrices iaculis eget eu libero. Etiam et magna pulvinar ex fringilla ullamcorper vitae vitae erat. Proin feugiat erat lorem, ut posuere mauris scelerisque non. Praesent non odio ac diam ullamcorper cursus.
+        <h3>O nama</h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut elementum mauris. Aliquam ut magna nec turpis mollis volutpat. Praesent pellentesque elit nunc, in viverra turpis blandit a. Nam in tortor sed tortor ultrices iaculis eget eu libero. Etiam et magna pulvinar ex fringilla ullamcorper vitae vitae erat. Proin feugiat erat lorem, ut posuere mauris scelerisque non. Praesent non odio ac diam ullamcorper cursus.
 Sed a quam at nibh mollis fringilla quis quis purus. Vestibulum luctus vehicula sem vel faucibus. Praesent libero est, pretium in dapibus vel, bibendum at lacus. Mauris ac scelerisque sem, et suscipit dolor. Etiam vel varius lacus. Nulla vel blandit leo, nec ullamcorper lectus. Nunc et tempus sapien, molestie fermentum sem. Suspendisse ullamcorper, felis a convallis feugiat, ligula quam lobortis lorem, a ullamcorper enim mi eget eros. Quisque congue gravida risus tincidunt cursus. Cras fermentum fermentum tincidunt. </p>
-        <h3 class="eng">About</h3>
-        <p class="eng"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut elementum mauris. Aliquam ut magna nec turpis mollis volutpat. Praesent pellentesque elit nunc, in viverra turpis blandit a. Nam in tortor sed tortor ultrices iaculis eget eu libero. Etiam et magna pulvinar ex fringilla ullamcorper vitae vitae erat. Proin feugiat erat lorem, ut posuere mauris scelerisque non. Praesent non odio ac diam ullamcorper cursus.
-Sed a quam at nibh mollis fringilla quis quis purus. Vestibulum luctus vehicula sem vel faucibus. Praesent libero est, pretium in dapibus vel, bibendum at lacus. Mauris ac scelerisque sem, et suscipit dolor. Etiam vel varius lacus. Nulla vel blandit leo, nec ullamcorper lectus. Nunc et tempus sapien, molestie fermentum sem. Suspendisse ullamcorper, felis a convallis feugiat, ligula quam lobortis lorem, a ullamcorper enim mi eget eros. Quisque congue gravida risus tincidunt cursus. Cras fermentum fermentum tincidunt. </p>
-        <a href="#top" class="back"><i class="fa fa-angle-double-up"></i></a>
-      </section>
-      <section class="main" id="history">
-        <h3 class="srp">Istorijat</h3>
-        <p class="srp">In hac habitasse platea dictumst. Cras aliquam laoreet nulla sit amet lacinia. Praesent consectetur diam at facilisis porta. Nulla maximus turpis sed quam rutrum, vel mollis erat eleifend. Praesent non iaculis odio. Morbi pharetra elit venenatis, auctor massa ut, ultrices augue. Aenean interdum ligula suscipit augue consequat, consequat rhoncus felis convallis. Nunc vitae dictum enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras rutrum venenatis rutrum. Ut sodales et risus ut aliquet. Duis convallis nulla a dui consequat, nec posuere felis maximus. Curabitur quis sagittis nibh. Maecenas mauris leo, aliquet eget massa vestibulum, mattis blandit risus. Praesent tincidunt mollis tellus sit amet fermentum. </p>
-         <h3 class="eng">History</h3>
-         <p class="eng">In hac habitasse platea dictumst. Cras aliquam laoreet nulla sit amet lacinia. Praesent consectetur diam at facilisis porta. Nulla maximus turpis sed quam rutrum, vel mollis erat eleifend. Praesent non iaculis odio. Morbi pharetra elit venenatis, auctor massa ut, ultrices augue. Aenean interdum ligula suscipit augue consequat, consequat rhoncus felis convallis. Nunc vitae dictum enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras rutrum venenatis rutrum. Ut sodales et risus ut aliquet. Duis convallis nulla a dui consequat, nec posuere felis maximus. Curabitur quis sagittis nibh. Maecenas mauris leo, aliquet eget massa vestibulum, mattis blandit risus. Praesent tincidunt mollis tellus sit amet fermentum. </p>
-          <a href="#top" class="back"><i class="fa fa-angle-double-up"></i></a>
-      </section>
-      <section class="main" id="gallery">
-        <h3 class="srp">Galerija</h3>
-        <h3 class="eng">Gallery</h3>
-        <div id="photo-container">
-          <div class="photo">
-             <a href="images/hor-6.jpg" target="_blank">
-               <img src="images/hor-6.jpg" alt="Hor 1">
-             </a>
-          <div class="desc srp">Opis slike 1</div>
-          <div class="desc eng">Description 1</div>
-        </div>
-          <div class="photo">
-          <a href="images/hor-2.jpg" target="_blank">
-            <img src="images/hor-2.jpg" alt="Proba">
-          </a>
-          <div class="desc srp">Proba</div>
-          <div class="desc eng">Practice</div>
-        </div>
-          <div class="photo">
-          <a href="images/hor-3.jpg" target="_blank">
-            <img src="images/hor-3.jpg" alt="Hor 3">
-          </a>
-          <div class="desc srp">Opis slike 3</div>
-          <div class="desc eng">Description 3</div>
-        </div>
-        <div class="photo">
-        <a href="images/hor-4.jpg" target="_blank">
-          <img src="images/hor-4.jpg" alt="Hor 4">
-        </a>
-        <div class="desc srp">Opis slike 4</div>
-        <div class="desc eng">Description 4</div>
-      </div>
-      <div class="photo">
-      <a href="images/hor-5.jpg" target="_blank">
-        <img src="images/hor-5.jpg" alt="Hor 5">
-      </a>
-      <div class="desc srp">Opis slike 5</div>
-      <div class="desc eng">Description 5</div>
-    </div>
-    <div class="photo">
-    <a href="images/ars.jpg" target="_blank">
-      <img src="images/ars.jpg" alt="Hor 11">
-    </a>
-    <div class="desc srp">Opis slike 6</div>
-    <div class="desc eng">Description 6</div>
-  </div>
-      </div>
-      <a href="#top" class="back"><i class="fa fa-angle-double-up"></i></a>
-    </section>
-      <section class="main" id="media">
-        <h3 class="srp">Video</h3>
-        <h3 class="eng">Video</h3>
-        <section class="video">
-          <iframe width="800" height="470" src="https://www.youtube.com/embed/ZRDwmT6Gv-Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p class="srp">Objavio: <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw" target="_blank" class="link">Hor Ars Vocalis</a></p>
-          <p class="eng">Posted by: <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw" target="_blank" class="link">Choir Ars Vocalis</a></p>
-         </section>
-         <section class="video">
-           <iframe width="800" height="470" src="https://www.youtube.com/embed/flo5yTF0Oz8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           <p class="srp">Objavio: <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw" target="_blank" class="link">Hor Ars Vocalis</a></p>
-           <p class="eng">Posted by: <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw" target="_blank" class="link">Choir Ars Vocalis</a></p>
-          </section>
-          <section class="video">
-            <iframe width="800" height="470" src="https://www.youtube.com/embed/Bw58AZM7f8Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <p class="srp">Objavio: <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw" target="_blank" class="link">Hor Ars Vocalis</a></p>
-            <p class="eng">Posted by: <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw" target="_blank" class="link">Choir Ars Vocalis</a></p>
-           </section>
-         <a href="#top" class="back"><i class="fa fa-angle-double-up"></i></a>
       </section>
     </div>
     <footer>
       <div class="container">
         <section id="contact">
-        <h3 class="srp">Kontakt</h3>
-        <h3 class="eng">Contact</h3>
+        <h3>Kontakt</h3>        
           <div id="contact-2">
             <div id="form">
-              <h4 class="srp sign-up">Prijavite se da postanete član hora.</h4>
-              <h4 class="eng sign-up">Sign up to become a choir member.</h4>
-              <div class="srp">
+              <h4 class="sign-up">Prijavite se da postanete član hora.</h4>
+              <div>
                 <form class="gform" data-email="sasajtaporuka@gmail.com" action="https://script.google.com/macros/s/AKfycbxjf_ul1cC_5MIA3N69fgHPZYZilrwnuu8upfta/exec" method="POST">
-                  <label for="ime">Ime</label>
+                  <label for="ime">Ime i prezime</label>
                   <input id="ime" type="text" name="name" placeholder="Vaše ime..." class="input" required></br>
                   <label for="email-sr">e-mail</label>
                   <input type="email-sr" name="email" placeholder="Vaš e-mail" class="input" required></br>
@@ -149,20 +62,6 @@ Sed a quam at nibh mollis fringilla quis quis purus. Vestibulum luctus vehicula 
                   </div>
                 </form>
               </div>
-              <div class="eng">
-                <form class="gform" data-email="sasajtaporuka@gmail.com" action="https://script.google.com/macros/s/AKfycbxjf_ul1cC_5MIA3N69fgHPZYZilrwnuu8upfta/exec" method="POST">
-                  <label for="name">Name</label>
-                  <input id="name" type="text" name="name" placeholder="Your name, please..." class="input" required></br>
-                  <label for="email-en">e-mail</label>
-                  <input type="email-en" name="email" placeholder="Your e-mail" class="input" required></br>
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" placeholder="Message text..." rows="6" column="20" class="input" required></textarea> </br>
-                  <input type="submit" value="Send" class="submit">
-                  <div style="visibility:hidden" class="thankyou_message">
-                    <h4>Thanks for contacting us! We will get back to you soon!</h4>
-                  </div>
-                </form>
-              </div>
             </div>
             <div id="contact-links">
               <a href="https://sr-rs.facebook.com/choirarsvocalis/" class="social" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -170,9 +69,9 @@ Sed a quam at nibh mollis fringilla quis quis purus. Vestibulum luctus vehicula 
               <a href="https://www.youtube.com/channel/UCoHmwHmZ0Tch3bd3vAx6Crw/featured" class="social" target="_blank"><i class="fa fa-youtube"></i></a>
             </div>
           </div>
-    </section>
-    </div>
-    <p>Created by IvanaGoSt</p>
+      </section>
+      </div>
+      <p>Created by IvanaGoSt</p>
   </footer>
 
     <script src="scripts/main.js"></script>
