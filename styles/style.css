@@ -27,6 +27,7 @@ nav div {
 #logo {
   margin-top: 5px;
   margin-left: 5px;
+  box-shadow: 0 0 5px white;
 }
 
 .items {
@@ -56,8 +57,8 @@ nav a:hover {
 
   #bars {
     display: block;
-    margin-right:15px;
-    margin-top: 15px;
+    margin-right:16px;
+    margin-top: 16px;
   }
   nav div {
     align-self: flex-start;
@@ -68,21 +69,26 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../images/hor-6.jpg");
+  background-image: url("../images/note-1.jpg");
   position: relative;
-  height: 50vh;
+  height: 65vh;
 }
 
 header div {
   background-color: black;
   position: absolute;
-  bottom: 0;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 15px #f1ebda;
+  border-radius: 5px;
+  padding: 25px;
+  width: 250px;
 }
 
 header h1, header h2 {
   text-align: center;
-  color: #d7c48e;
+  color: #f1ebda;
   margin: auto;
 }
 
@@ -143,6 +149,43 @@ h3 {
   }
 }
 
+.features {
+  background-color: #bb9b44;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.features .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  box-shadow: 0 0 15px #ddcda2;
+  transition: 0.3s;
+  border-radius: 5px;
+  width: auto;
+  flex: 1;
+  text-align: center;
+  margin: 16px;
+  padding: 16px;
+  background-color: #e6e6e6;
+}
+
+.card:hover {
+  box-shadow: 0 0 30px #ddcda2;
+}
+
+.card i {
+  font-size: 120px;
+}
+
+.card h4 {
+  color: #705d29;
+}
+
 #photo-container {
   display: flex;
   flex-direction: row;
@@ -175,7 +218,7 @@ h3 {
 .modal {
   display: none;
   position: fixed;
-  z-index: 200;
+  z-index: 100;
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -217,6 +260,7 @@ h3 {
   right: 25px;
   font-size: 35px;
   font-weight: bold;
+  z-index: 200;
 }
 
 .close:hover,
@@ -317,6 +361,11 @@ form {
   margin: 5px;
   font-size: 20px;
   color: black;
+}
+
+.submit:hover {
+  background-color: black;
+  color: #c3a655;
 }
 
 label {
