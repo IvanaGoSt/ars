@@ -27,7 +27,7 @@ nav div {
 #logo {
   margin-top: 5px;
   margin-left: 5px;
-  box-shadow: 0 0 5px white;
+  box-shadow: 0 0 2px white;
 }
 
 .items {
@@ -184,6 +184,22 @@ h3 {
 
 .card h4 {
   color: #705d29;
+}
+
+.first, .second {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  cursor: default;
+}
+
+.first {
+  font-size: 60px;
+}
+.second {
+  font-size: 35px;
 }
 
 #photo-container {
@@ -397,4 +413,18 @@ footer p {
   text-align: right;
   padding-right: 5%;
   font-size: 0.9em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #d7c48e;
+}
+
+footer a:visited {
+  color: #d7c48e;
+}
+
+footer a:hover {
+  color: white;
+  text-shadow: 0 0 5px white;
 }
