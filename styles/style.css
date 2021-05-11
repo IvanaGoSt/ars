@@ -94,16 +94,17 @@ header h1, header h2 {
 
 #lang {
   margin: 1%;
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 10px;
   position: absolute;
   right: 0;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 2px white;
 }
 
 #lang a {
   text-decoration: none;
   color: black;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #lang a:visited {
@@ -162,6 +163,23 @@ h3 {
   justify-content: space-around;
 }
 
+.contacts h2 {
+  font-size: 160%;
+}
+
+.contacts h3 {
+  font-size: 120%;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #d6c38f;
+  margin-bottom: 5%;
+}
+
 .card {
   box-shadow: 0 0 15px #ddcda2;
   transition: 0.3s;
@@ -175,7 +193,7 @@ h3 {
 }
 
 .card:hover {
-  box-shadow: 0 0 30px #ddcda2;
+  box-shadow: 0 0 30px #e4d7b4;
 }
 
 .card i {
@@ -338,6 +356,13 @@ h3 {
 
 #media {
   padding-bottom: 15%;
+}
+
+iframe {
+  border: 2px solid #c9af69;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #c9af69;
+  margin-bottom: 5%;
 }
 
 footer {
